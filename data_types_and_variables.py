@@ -34,7 +34,19 @@ if is_not_full == True and schedule_conflict == False:
 is_enrolled
 
 '''
-A product offer can be applied only if people buys more than 2 items, and the offer has not expired. Premium members do not need to buy a specific amount of products.
+A product offer can be applied only if people buys more than 2 items, and the offer has not expired. 
+Premium members do not need to buy a specific amount of products.
+'''
+offer_is_applied = False
+is_more_than_2 = True
+is_expired = False
+is_premium_member = True
+
+if (is_more_than_2 == True and is_expired == False) or (is_premium_member == True and is_expired == False):
+    offer_is_applied = True
+
+offer_is_applied
+'''
 Use the following code to follow the instructions below:
 
 username = 'codeup'
@@ -46,3 +58,17 @@ the username must be no more than 20 characters
 the password must not be the same as the username
 bonus neither the username or password can start or end with whitespace
 '''
+username = 'codeup'
+password = 'notastrongpassword'
+
+is_pass_at_least_5 = len(password) >= 5
+is_pass_at_least_5 
+
+is_user_20_or_less = len(username) <= 20
+is_user_20_or_less
+
+is_user_different_from_pass = username != password
+is_user_different_from_pass
+
+has_spaces = username.strip() == username and password.strip() == password
+has_spaces
