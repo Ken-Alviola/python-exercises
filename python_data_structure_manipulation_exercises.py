@@ -4,7 +4,16 @@
 The following questions reference the students data structure below. Write the python code to answer the following questions:
 
 How many students are there?
+'''
+len(students)
+#14 students
+'''
 How many students prefer light coffee? For each type of coffee roast?
+'''
+count = 0
+students[0]['coffee_preference']
+
+'''
 How many types of each pet are there?
 How many grades does each student have? Do they all have the same number of grades?
 What is each student's grade average?
